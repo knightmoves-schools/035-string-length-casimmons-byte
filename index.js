@@ -1,9 +1,8 @@
 let quote = "...ask not what your country can do for you — ask what you can do for your country.";
+const quoteLength = quote.length;
+const twentySecondLetter = quote.charAt(21); 
 
-//Add code below
-let quoteLength = quote.length;
-let twentySecondLetter = quote[21];
-let output = `the length of the quote is ${quoteLength} and the twenty-second letter in the quote is ${twentySecondLetter}`;
-let output = `the length of the quote is ${quoteLength} and the twenty-second letter in the quote is [${twentySecondLetter}]`;
+let output = `${quoteLength}`;
+output += ` [${twentySecondLetter}]`;
 
-document.getElementById("result").innerHTML = output;
+document.getElementById('result').innerHTML = output;
